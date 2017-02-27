@@ -1,24 +1,5 @@
-# README
+## App Build Instructions:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Build a simple Ruby on Rails application that interfaces with an API to show information to the user.  You can use any API you wish to (this GitHub repository lists quite a few public API’s that you can use for free: https://github.com/toddmotto/public-apis ).
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Include some form of user input, whether it be a user specified category, search term, etc. (just some sort of input from the user that alters the output).
