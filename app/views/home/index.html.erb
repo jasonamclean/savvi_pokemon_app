@@ -18,7 +18,7 @@
     <%= image_tag @data['sprites']['front_default'] %>    
     
     <ul>      
-      <li>Pokémon Name: <%= @data['name'].capitalize %></li>
+      <li>Pokémon Name: <span class="bold_text"><%= @data['name'].capitalize %></span></li>
       <li>Weight: <%= @data['weight'] %></li>
       <li>Pokédex ID: <%= @data['id'] %></li>
     </ul>
