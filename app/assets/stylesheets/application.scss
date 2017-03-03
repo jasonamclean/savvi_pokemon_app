@@ -1,0 +1,38 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+body {
+  padding: 0 20px 20px 20px;
+}
+
+h1 {
+  font-family: 'Fontdiner Swanky', cursive;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.lower_pad {
+  padding-bottom: 20px;
+}
+
+.bold_text {
+  font-weight: bold;
+}
+
+.poke_field {
+  height: 30px;
+  width: 80px;
+}
+
+.poke_submit {
+  height: 33px;
+  width: 70px;
+  background-color: yellow;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+
+.stats {
+  text-decoration: underline;
+}
