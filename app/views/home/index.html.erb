@@ -1,1 +1,36 @@
-<h1>Home of PokéSearch</h1>
+<h1>Home of PokéSearch!</h1>
+
+<h3>Search for Pokémon below</h3>
+
+<p>Enter an integer between 1-721 to discover a Pokémon of foreign dimensions:</p>
+
+<%= render 'form' %>
+
+<div class="lower_pad"></div>
+
+<hr>
+
+<h2>PokéStats:</h2>
+
+<div>
+  <% unless @data.nil? %>
+    
+    <%= image_tag @data['sprites']['front_default'] %>    
+    
+    <ul>      
+      <li>Pokémon Name: <%= @data['name'].capitalize %></li>
+      <li>Weight: <%= @data['weight'] %></li>
+    </ul>
+
+  <p>Abilities:</p>
+    <ol>
+        <% @data['abilities'].each do |x| %>
+          <li><%= x['ability']['name'].capitalize %></li>
+        <% end %>
+    </ol>
+
+    <div>
+      <%= image_tag @giphy['data'][0]['images']['fixed_height']['url'] %>
+    </div>
+  <% end %>
+</div>
