@@ -1,4 +1,6 @@
 Rails.application.configure do
+  # Updated and added for workaround from secrets.yml file
+  config.secret_key_base = ENV["SECRET_KEY_BASE"]
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
