@@ -4,12 +4,30 @@
 
 body {
   padding: 0 20px 20px 20px;
+  text-align: center;
+  background-color: #d6e5fc;
 }
 
 h1 {
   font-family: 'Fontdiner Swanky', cursive;
   font-size: 40px;
   font-weight: bold;
+  color: yellow;
+  line-height: 70px;
+}
+
+ol {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div .color {  
+  height: 70px;
+  width: 800px;
+  margin: auto;
+  border-radius: 5px;
+  background-color: blue;
 }
 
 .lower_pad {
@@ -25,14 +43,25 @@ h1 {
   width: 80px;
 }
 
-.poke_submit {
-  height: 33px;
+.poke_search {
+  height: 30px;
   width: 70px;
-  background-color: yellow;
+  background-color: #f40202;
   border-radius: 4px;
   border: 1px solid black;
 }
 
-.stats {
+/*.stats {
   text-decoration: underline;
+}*/
+
+.divider {
+  height: 2px;
+  width: 600px;
+  border: 3px solid black;
+  margin: auto;
+}
+
+#no_bullet {
+  list-style-type: none;
 }
