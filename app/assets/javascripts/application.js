@@ -11,6 +11,20 @@
 // about supported directives.
 //
 //= require jquery
+//= require bootstrap-sprockets
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+// $(function() {
+// if($('#number_field').val() ==  "")
+//    $('#submit_button').attr('disabled', true);
+
+// $('#number_field').keyup(function(){
+//     if($('#number_field').val() !=  "")
+//          $('#submit_button').attr('disabled', false);
+//     else
+//          $('#submit_button').attr('disabled', true);
+// });
+// })
