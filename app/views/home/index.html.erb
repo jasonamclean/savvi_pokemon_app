@@ -1,37 +1,50 @@
-<h1>Home of PokéSearch!</h1>
+<div class="container col-md-6">
+  <div class="container">
+    <div class="color">
+      <h1>
+        <%= image_tag 'pokemon-ball.png', width: '6%' %>&nbsp;&nbsp;
+          Home of PokéSearch!&nbsp;&nbsp;
+        <%= image_tag 'pokemon-ball.png', width: '6%' %>
+      </h1>
+    </div>
 
-<h3>Search for Pokémon below</h3>
+    <h3>Search for Pokémon below</h3>
 
-<p>Enter an number between 1-721 to discover a Pokémon of foreign dimensions:</p>
+    <p>Enter an number between 1-721 to discover a Pokémon of unknown origins!</p>
 
-<%= render 'form' %>
+    <%= render 'form' %>
 
-<div class="lower_pad"></div>
+    <div class="lower_pad"></div>
 
-<hr>
+    <div class="divider"></div>
 
-<h2 class="stats">PokéStats:</h2>
+  </div>
 
-<div>
-  <% unless @data.nil? %>
-    
-    <%= image_tag @data['sprites']['front_default'] %>    
-    
-    <ul>      
-      <li>Pokémon Name: <span class="bold_text"><%= @data['name'].capitalize %></span></li>
-      <li>Weight: <%= @data['weight'] %></li>
-      <li>Pokédex ID: <%= @data['id'] %></li>
-    </ul>
-
-  <p>Abilities:</p>
-    <ol>
-        <% @data['abilities'].each do |x| %>
-          <li><%= x['ability']['name'].capitalize %></li>
-        <% end %>
-    </ol>
+  <div class="container">
+    <h2 class="stats">PokéStats</h2>
 
     <div>
-      <%= image_tag @giphy['data'][0]['images']['fixed_height']['url'] %>
+      <% unless @data.nil? %>
+        
+        <p>Pokémon Name: <span class="bold_text"><%= @data['name'].capitalize %></span></p>
+
+        <%= image_tag @data['sprites']['front_default'] %>    
+           
+        <p>Weight: <%= @data['weight'] %></p>
+        <p>Pokédex ID: <%= @data['id'] %></p>
+
+        <p><span class="bold_text">Abilities:</span></p>
+        
+        <ol>
+          <% @data['abilities'].each do |x| %>
+            <li><%= x['ability']['name'].capitalize %></li>
+          <% end %>
+        </ol>
+
+        <div>
+          <%= image_tag @giphy['data'][0]['images']['fixed_height']['url'] %>
+        </div>
+      <% end %>
     </div>
-  <% end %>
+  </div>
 </div>
