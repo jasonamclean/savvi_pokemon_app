@@ -6,8 +6,6 @@ class HomeController < ApplicationController
 
       url = "http://api.giphy.com/v1/gifs/search?api_key=dc6zaTOxFJmzC&q=" + @data['name']
       @giphy = ActiveSupport::JSON.decode( HTTParty.get(url, headers: {'content_type' => 'application/json'} ).to_json )
-    else
-      
     end
   end
 end
