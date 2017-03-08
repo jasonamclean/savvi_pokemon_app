@@ -1,4 +1,8 @@
-## App Build Instructions:
+# Check out some real live PokéSearch here!
+
+[PokéSearch!](http://pokemon-search.herokuapp.com/)
+
+### App Build Instructions:
 
 - Build a simple Ruby on Rails application that interfaces with an API to show information to the user.  You can use any API you wish to (this GitHub repository lists quite a few public API’s that you can use for free: https://github.com/toddmotto/public-apis ).
 
