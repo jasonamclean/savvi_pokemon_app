@@ -10,7 +10,7 @@
 
     <h3>Search for Pokémon below</h3>
 
-    <p>Enter an number between 1-721 to discover a Pokémon of unknown origins!</p>
+    <p>Enter a number between 1-721 to discover a Pokémon!</p>
 
     <%= render 'form' %>
 
@@ -20,11 +20,10 @@
 
   </div>
 
-  <div class="container">
-    <h2 class="stats">PokéStats</h2>
-
+  <div class="container"> 
     <div>
       <% unless @data.nil? %>
+        <h2 class="stats">PokéStats</h2>
         
         <p>Pokémon Name: <span class="bold_text"><%= @data['name'].capitalize %></span></p>
 
